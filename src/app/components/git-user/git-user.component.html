@@ -2,7 +2,32 @@
 
   <div class="panel panel-default">
     <div class="panel-heading">
-      {{gitUser.name}}
+      {{gitUser.name}} 
+    </div>
+    <div class="panel-body">
+      <div class="row">
+        <div class="col-sm-3">
+          <img src="{{gitUser.avatar_url}}" class="img-circle" alt="git profile image">
+        </div>
+        <div class="col-sm-5">
+          <ul class="list-group">
+            <li class="list-group-item" *ngIf="gitUser.bio"> <a href="#" target="_blank">{{gitUser.bio}}</a></li>
+            <li class="list-group-item" *ngIf="gitUser.blog"> <a href="#" target="_blank">{{gitUser.blog}}</a></li>
+            <li class="list-group-item" *ngIf="gitUser.email"> <a href="emailto:{{gitUser.email}}">{{gitUser.email}}</a></li>
+           
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+
+    </div>
+    <div class="panel-body" *ngFor="let repo of repos">
+      <p></p>
     </div>
   </div>
 </div>
