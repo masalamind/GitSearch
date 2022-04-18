@@ -7,10 +7,15 @@ import { GitUserService } from 'src/app/services/git-user.service';
 })
 export class GitUserComponent implements OnInit {
 
+  // private profile;
+  gitUser: any;
   constructor(private userService: GitUserService) { 
 
     this.userService.getUserInfo().subscribe(userDetails => {
       console.log(userDetails);
+      
+      this.gitUser = userDetails;
+  
     });
   }
 
