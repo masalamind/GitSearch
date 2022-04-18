@@ -1,6 +1,9 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
+// import { GitUserService } from './services/git-user.service';
+import { HttpClientModule } from '@angular/common/http';
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { GitUserComponent } from './components/git-user/git-user.component';
@@ -9,12 +12,14 @@ import { GitUserComponent } from './components/git-user/git-user.component';
 @NgModule({
   declarations: [
     AppComponent,
-    GitUserComponent,
-   
+    GitUserComponent   
+    
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    // GitUserService,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { GitUserService } from 'src/app/services/git-user.service';
 @Component({
   selector: 'app-git-user',
   templateUrl: './git-user.component.html',
@@ -7,7 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GitUserComponent implements OnInit {
 
-  constructor() { }
+  constructor(private userService: GitUserService) { 
+
+    this.userService.getUserInfo().subscribe(userDetails => {
+      console.log(userDetails);
+    });
+  }
 
   ngOnInit(): void {
   }
