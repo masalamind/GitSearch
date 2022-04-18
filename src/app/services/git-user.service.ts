@@ -2,7 +2,7 @@
 import { Injectable } from '@angular/core';
 // import { Http, Headers } from '@angular/http';
 import { HttpClient } from '@angular/common/http';
-import 'rxjs/add/operator/map'; // return github results in form of observables
+// import 'rxjs/add/operator/map'; // return github results in form of observables
 
 @Injectable({
   providedIn: 'root'
