@@ -3,11 +3,9 @@
   <header class="d-flex justify-content-center py-3">
     <ul class="nav nav-pills">
       <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Home</a></li>
-      <li class="nav-item"><a href="#" class="nav-link">Repos</a></li>
-      <!-- <li class="nav-item"><a href="#" class="nav-link">Pricing</a></li>
-      <li class="nav-item"><a href="#" class="nav-link">FAQs</a></li>
-      <li class="nav-item"><a href="#" class="nav-link">About</a></li> -->
+      <li class="nav-item"><a href="#" class="nav-link">Repos</a></li>    
     </ul>
+    
   </header>
 </div>
 
@@ -23,15 +21,7 @@
           <input type="text" class="form-control" id="floatingInput" placeholder="search git username" [(ngModel)]="username" name="username" keyup="findUserDetails()">
           <label for="floatingInput">Enter Git Username</label>
         </div>
-        <!-- <div class="form-floating mb-3">
-          <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-          <label for="floatingPassword">Password</label>
-        </div> -->
-        <!-- <div class="checkbox mb-3">
-          <label>
-            <input type="checkbox" value="remember-me"> Remember me
-          </label>
-        </div> -->
+        
         <button class="w-100 btn btn-lg btn-primary" type="submit" (click)="findUserDetails()">Search User</button>
         <hr class="my-4">
         
@@ -61,7 +51,6 @@
     <h6 class="border-bottom pb-2 mb-0 bg-light">Repositories</h6>
     <div class="list-group" *ngFor="let repo of gitRepo">
       <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
-        <!-- <img src="https://github.com/twbs.png" alt="twbs" width="32" height="32" class="rounded-circle flex-shrink-0"> -->
         <div class="d-flex gap-2 w-100 justify-content-between">
           <div>
             <h6 class="mb-0">{{repo.name}}</h6>

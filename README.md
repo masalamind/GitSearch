@@ -1,27 +1,43 @@
-# GitSearch
+# pizzaBusiness
+An github repositories search application 
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.2.
 
-## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Contributors
+Designed and coded by John Muiruri 
 
-## Code scaffolding
+### Description
+The website allows it's users to search for the repositories a particular user has. 
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
+## Access 
+The website is hosted online by github pages online on masalamind.github.io/pizzaBusiness
+The link to the live site is 
+(Delani Studio Website)[https://masalamind.github.io/pizzaBusiness/]
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+### Known Bugs 
 
-## Running unit tests
+- 
+## Setup Instructions 
+- The program will run in any modern web browser on mobile or desktop
+- It depends on the bootstrap library provided by their default content delivery network 
+- It contains one script one for running the main business logic 
+- It also contains an external style sheet and an images folder
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Copyright and licencse info
+- Copyright of masalacollective,masalamind 
+29/04/2022
 
-## Running end-to-end tests
+- The code is open source under GPL 
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## Technologies Used
+- Angular 
+- Typescript
+- Bootstrap
 
-## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+
+## Contact 
+
+themasalacollective@gmail.com
