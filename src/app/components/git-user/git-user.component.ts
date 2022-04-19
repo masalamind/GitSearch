@@ -10,9 +10,16 @@ export class GitUserComponent implements OnInit {
   // private profile;
   gitUser: any;
   gitRepo: any; 
-  username: string;
+  username: any;
 
   constructor(private userService: GitUserService) { 
+
+    
+  }
+
+  findUserDetails(){
+
+    this.userService.updateUser(this.username)
 
     this.userService.getUserInfo().subscribe(userDetails => {
       console.log(userDetails);
@@ -29,10 +36,7 @@ export class GitUserComponent implements OnInit {
     });
   }
 
-  findUserDetails(){
 
-    this.userService.updateUser(this.username)
-  }
   ngOnInit(): void {
   }
 
