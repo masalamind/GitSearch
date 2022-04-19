@@ -10,6 +10,7 @@ export class GitUserComponent implements OnInit {
   // private profile;
   gitUser: any;
   gitRepo: any; 
+
   constructor(private userService: GitUserService) { 
 
     this.userService.getUserInfo().subscribe(userDetails => {
@@ -20,8 +21,9 @@ export class GitUserComponent implements OnInit {
     });
 
     this.userService.getUserRepos().subscribe(userRepository => {
-      // console.log(userRepository);
+      console.log(userRepository);
       this.gitRepo = userRepository;
+      console.log(this.gitRepo);
   
     });
   }
