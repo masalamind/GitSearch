@@ -26,8 +26,10 @@
     <div class="panel-heading">
 
     </div>
-    <div class="panel-body" *ngFor="let repo of repos">
-      <p></p>
-    </div>
+    <div class="panel-body" *ngFor="let repo of gitRepo")>
+      <p>{{repo.name}}</p>
+      <!-- <p>{{repo.name}}<a href="{{repo.html_url}}" target="_blank"> View this project on github </a></p> -->
+      <p>{{repo.description}}</p>
+    </div>                                
   </div>
 </div>
