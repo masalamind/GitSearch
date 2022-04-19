@@ -20,8 +20,8 @@
     <div class="col-md-10 mx-auto col-lg-5">
       <form class="p-4 p-md-5 border rounded-3 bg-light">
         <div class="form-floating mb-3">
-          <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-          <label for="floatingInput">Username</label>
+          <input type="text" class="form-control" id="floatingInput" placeholder="search git username" [(ngModel)]="username" name="username" keyup="findUserDetails()">
+          <label for="floatingInput">Enter Git Username</label>
         </div>
         <!-- <div class="form-floating mb-3">
           <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
